@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaGrow</title>
+    <link rel="stylesheet" href="css/inti.css">
+</head>
+<body>
+    <div class="home">
+        <h1>AquaGrow Dashboard</h1>
+        <p>Monitoring dan kontrol sistem penyiraman</p>
+    </div>
+
+    <!-- Soil Moisture Gauge -->
+    <div class="card gauge-card">
+        <h3>Soil Moisture</h3>
+        <div class="gauge">
+            <div class="dial"></div>
+            <div class="needle" id="needle"></div>
+            <div class="value" id="soilValue">--%</div>
+        </div>
+    </div>
+
+    <!-- Temperature & Humidity -->
+    <div class="card">
+        <h3>Suhu: <span id="temp">--°C</span></h3>
+        <h3>Kelembapan: <span id="hum">--%</span></h3>
+    </div>
+
+    <!-- System Status -->
+    <div class="card">
+        <h3>Kondisi: <span id="kondisi">--</span></h3>
+        <h3>Mode: <span id="mode">--</span></h3>
+        <button id="togglePompa" onclick="togglePompa()">Nyalakan Pompa</button>
+        <br><br>
+        <button id="toggleMode" onclick="toggleMode()">Ganti Mode</button>
+    </div>
+
+    <!-- <div class="category-container">
+    <div class="category-card" data-percent="60">
+        <h4>Tanaman Daun</h4>
+        <p>60%</p>
+        <button class="setBtn">Set %</button>
+    </div>
+
+    <div class="category-card" data-percent="55">
+        <h4>Tanaman Berbunga</h4>
+        <p>55%</p>
+        <button class="setBtn">Set %</button>
+    </div>
+
+    <div class="category-card" data-percent="50">
+        <h4>Succulent</h4>
+        <p>50%</p>
+        <button class="setBtn">Set %</button>
+    </div>
+
+    <div class="category-card" data-percent="65">
+        <h4>Palem & Tropis</h4>
+        <p>65%</p>
+        <button class="setBtn">Set %</button>
+    </div>
+
+    <div class="custom-container">
+        <h4>Custom Setpoint:</h4>
+        <input type="number" id="customPercent" min="0" max="100" placeholder="Masukkan % soil moisture">
+        <button id="customBtn">Set Custom</button>
+    </div> -->
+
+    <script src="js/inti.js"></script>
+</body>
+</html>

@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaGrow</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaGrow - Login</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div class="home">
-        <h1>AquaGrow Dasboard</h1>
-        <p>Monitoring dan kontrol sistem penyiraman</p>
-    </div>
+  <div class="container">
+    <h1 class="title">AquaGrow</h1>
+    <p class="subtitle">Masuk untuk mulai mengatur sistemmu</p>
 
-    <div class="card">
-        <h3>Soil Moisture</h3>
-        <p id="soil">--%</p>
-    </div>
+    <div class="form">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
 
-    <div class="card">
-        <h3>Suhu: <span id="temp">--°C</span></h3>
-        <h3>Kelembapan: <span id="hum">--%</span></h3>
+      <button id="loginBtn">Login</button>
+      <button id="skipBtn" class="skip">Skip</button>
     </div>
+  </div>
 
-    <div class="card">
-        <h3>Kondisi: <span id="kondisi">--</span></h3>
-        <h3>Mode: <span id="mode">--</span></h3>
-        <button id="togglePompa" onclick="togglePompa()">Nyalakan Pompa</button>
-        <br><br>
-        <button id="toggleMode" onclick="toggleMode()">Ganti Mode</button>
-    </div>
+  <script src="js/login.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
